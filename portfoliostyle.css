@@ -47,15 +47,7 @@
     text-align: center;
 }
 
-/* ***********************************************************
-     Work Experience logos — layout and sizing notes
 
-     - Layout: use flexbox so logos are centered and placed
-         next to each other with controlled spacing. `flex-wrap`
-         allows logos to move to the next line on narrow screens.
-     - `gap` controls the space between each logo (24px chosen).
-     - `padding` gives vertical breathing room inside the section.
-     ***********************************************************/
 #work-experience {
     width: 100%;
     display: flex;
@@ -75,14 +67,6 @@
     margin: 0 0 16px; /* small gap under the heading */
 }
 
-/*
-  Logo image sizing notes:
-  - We render each logo into a fixed display box so they look consistent.
-  - `object-fit: contain` preserves the original aspect ratio and
-    ensures the full logo is visible (no stretching).
-  - If you prefer fully responsive sizing instead, change these to
-    `max-width` and `height: auto` (see alternative example below).
-*/
 #work-experience img {
     width: 220px; /* displayed box width for each logo */
     height: 120px; /* displayed box height for each logo */
