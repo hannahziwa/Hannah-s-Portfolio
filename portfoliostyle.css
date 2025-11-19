@@ -1,0 +1,112 @@
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: cadetblue;
+}
+
+.headshot {
+    float:none;
+    position: relative;
+    width: 120px;
+    position: relative;
+    left: 450px;
+}
+
+.headshot img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.headshot-2 {
+    float: left;
+    position: relative;
+    width: 120px;
+    position: relative;
+    left: 450px;
+}
+
+/* Ensure any image inside the container scales to the container's size */
+.headshot-2 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.sections {
+    float: right;
+    position: relative;
+    right: 350px;
+}
+
+#academic-experience, #industrial-experience, #skills, #hobbies, #links {
+    margin: 250px;
+    padding: 50px;
+    text-align: center;
+}
+
+
+/* .greeting {
+    text-indent: 15px;
+    background-color: white;
+}
+
+.website {
+    margin: 1 em;
+    padding: 1 em;
+}
+
+.login {
+    margin: 1 em;
+    padding: 1 em;
+    background-color: white;
+}
+
+p {
+    background-color: white;
+}
+
+h3 {
+    background-color: white;
+}
+
+.form-email #email {
+    background-color: white;
+    margin: 1em;
+}
+
+.form-password #password {
+    background-color: white;
+    margin: 0.5em;
+}
+
+.form-submit {
+    background-color: white;
+    margin: 0.5em;
+}
+
+.create-new-account {
+    background-color: white;
+}
+
+label {
+    background-color: white;
+}
+
+button {
+    background-color: white;
+}
+
+a {
+    background-color: white;
+}
+.form {
+    margin: 0 auto;
+    padding: 2em;
+    width: 300px;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+} */
