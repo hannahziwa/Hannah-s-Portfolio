@@ -73,6 +73,29 @@
     object-fit: contain; /* preserve aspect ratio, show whole logo */
     display: block;
 }
+#links {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap; /* allow logos to wrap on small screens */
+    justify-content: center; /* center logos horizontally */
+    align-items: center; /* align logos vertically within the row */
+    gap: 24px; /* space between images */
+    padding: 24px 0; /* vertical spacing above/below the row */
+}
+
+#links img{
+    width: 120px; /* displayed box width for each logo */
+    height: 50px; /* displayed box height for each logo */
+    object-fit: contain; /* preserve aspect ratio, show whole logo */
+    display: block;
+}
+
+#links > h2 {
+    flex: 0 0 100%; /* take full row, don't grow or shrink */
+    width: 100%;
+    text-align: center;
+    margin: 0 0 16px; /* small gap under the heading */
+}
 
 /* Alternative responsive option (commented out):
 #work-experience img {
