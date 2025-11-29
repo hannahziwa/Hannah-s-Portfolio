@@ -24,7 +24,7 @@
     position: relative;
     width: 120px;
     position: relative;
-    left: 450px;
+    left: 350px;
 }
 
 /* Ensure any image inside the container scales to the container's size */
@@ -41,9 +41,15 @@
     right: 350px;
 }
 
-#academic-experience, #industrial-experience, #skills, #hobbies, #links {
-    margin: 250px;
+.academic-experience, .industrial-experience, .skills, .hobbies, .links {
+    /* Keep page sections centered and aligned with a maximum width
+       so all section content lines up horizontally. Using auto left/right
+       margins centers the block; smaller vertical margins give consistent
+       spacing without pushing content off-screen. */
+    max-width: 1000px;
+    margin: 250px auto; /* 50px vertical spacing, auto horizontally centers */
     padding: 50px;
+    box-sizing: border-box; /* include padding inside the max-width */
     text-align: center;
 }
 
@@ -73,6 +79,31 @@
     object-fit: contain; /* preserve aspect ratio, show whole logo */
     display: block;
 }
+
+.skills {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* allow logos to wrap on small screens */
+    justify-content: center; /* center logos horizontally */
+    align-items: center; /* align logos vertically within the row */
+    gap: 24px; /* space between images */
+    padding: 24px 0; /* vertical spacing above/below the row */
+}
+
+.skills img{
+    display: block;
+    width: 120px; /* displayed box width for each logo */
+    height: 50px; /* displayed box height for each logo */
+    object-fit: contain; /* preserve aspect ratio, show whole logo */
+}
+
+.skills > h2 {
+    flex: 0 0 100%; /* take full row, don't grow or shrink */
+    width: 100%;
+    text-align: center;
+    margin: 0 0 16px; /* small gap under the heading */
+}
+
 .links {
     width: 100%;
     display: flex;
