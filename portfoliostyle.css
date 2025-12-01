@@ -2,16 +2,8 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     background-color: cadetblue;
-}
-.hamburger-icon > div {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    border-radius: 50px;
-    margin: 6px 0;
-    position: relative;
-    left: 1130px;
-    nav-down: auto;
+    margin: 0px;
+    padding: 0px;
 }
 
 .headshot {
@@ -48,10 +40,44 @@
 .sections {
     float: right;
     position: relative;
-    right: 350px;
+    right: 150px;
+    margin: 20px;
+    padding: 20px;
+    background-color: aliceblue;
+    overflow: auto;
 }
 
-.academic-experience, .industrial-experience, .skills, .hobbies, .links {
+.sections ul {
+    background-color: aliceblue;
+}
+
+.sections li {
+    display: inline-block;
+    background-color: aliceblue;
+    padding: 0px 20px;
+}
+
+.sections li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: #000;
+    background-color: aliceblue;
+}
+
+.sections li a:hover {
+    color: aqua;
+    background-color: aliceblue;
+}
+
+h1 {
+    max-width: 300px;
+    margin: 40px auto; /* 50px vertical spacing, auto horizontally centers */
+    padding: 10px;
+    box-sizing: border-box; /* include padding inside the max-width */
+    text-align: center;
+}
+
+#academic-experience, #industrial-experience, #skills, #hobbies, #links {
     /* Keep page sections centered and aligned with a maximum width
        so all section content lines up horizontally. Using auto left/right
        margins centers the block; smaller vertical margins give consistent
@@ -63,8 +89,12 @@
     text-align: center;
 }
 
+#academic-experience div{
+    margin: 10px;
+    padding: 10px;
+}
 
-.work-experience {
+#work-experience {
     width: 100%;
     display: flex;
     flex-wrap: wrap; /* allow logos to wrap on small screens */
@@ -76,21 +106,21 @@
 
 /* Ensure the section heading sits on its own row and is not treated
    as a normal inline flex item — keep it full width and centered. */
-.work-experience > h2 {
+#work-experience > h2 {
     flex: 0 0 100%; /* take full row, don't grow or shrink */
     width: 100%;
     text-align: center;
     margin: 0 0 16px; /* small gap under the heading */
 }
 
-.work-experience img {
+#work-experience img {
     width: 220px; /* displayed box width for each logo */
     height: 120px; /* displayed box height for each logo */
     object-fit: contain; /* preserve aspect ratio, show whole logo */
     display: block;
 }
 
-.skills {
+#skills {
     width: 100%;
     display: flex;
     flex-wrap: wrap; /* allow logos to wrap on small screens */
@@ -100,21 +130,21 @@
     padding: 24px 0; /* vertical spacing above/below the row */
 }
 
-.skills img{
+#skills img{
     display: block;
     width: 120px; /* displayed box width for each logo */
     height: 50px; /* displayed box height for each logo */
     object-fit: contain; /* preserve aspect ratio, show whole logo */
 }
 
-.skills > h2 {
+#skills > h2 {
     flex: 0 0 100%; /* take full row, don't grow or shrink */
     width: 100%;
     text-align: center;
     margin: 0 0 16px; /* small gap under the heading */
 }
 
-.contact {
+#contact {
     width: 100%;
     display: flex;
     flex-wrap: wrap; /* allow logos to wrap on small screens */
@@ -124,20 +154,20 @@
     padding: 24px 0; /* vertical spacing above/below the row */
 }
 
-.contact img{
+#contact img{
     width: 120px; /* displayed box width for each logo */
     height: 50px; /* displayed box height for each logo */
     object-fit: contain; /* preserve aspect ratio, show whole logo */
     display: block;
 }
 
-.contact > h2 {
+#contact > h2 {
     flex: 0 0 100%; /* take full row, don't grow or shrink */
     width: 100%;
     text-align: center;
     margin: 0 0 16px; /* small gap under the heading */
 }
 
-.contact:hover {
+#contact:hover {
     
 }

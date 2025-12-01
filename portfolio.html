@@ -5,12 +5,17 @@
 <meta name="viewport" content="width-device-width, initial-scale=1.0">
 
 <body>
-    <section class="hamburger-icon">
-        <div></div>
-        <div></div>
-        <div></div>
+    <section class="sections">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#academic-experience">Academic Experience</a></li>
+            <li><a href="#work-experience">Industrial Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
     </section>
-    <section class="about">
+    <section id="about">
         <h1>Hiya, I'm Hannah!</h1>
         <div class="headshot">
             <img src="images/headshot.PNG" alt="headshot">
@@ -27,40 +32,8 @@
         </div>
         <!--Move this to the right on css-->
     </section>
-    <section class="sections">
-        <div>
-            <nav>
-                <a href=".about">About</a>
-            </nav>
-        </div>
-        <div>
-            <nav>
-                <a href=".academic-experience">Academic Experience</a>
-            </nav>
-        </div>
-        <div>
-            <nav>
-                <a href=".work-experience">Industrial Experience</a>
-            </nav>
-        </div>
-        <div>
-            <nav>
-                <a href=".skills">Skills</a>
-            </nav>
-        </div>
-        <div>
-            <nav>
-                <a href=".hobbies">Hobbies</a>
-            </nav>
-        </div>
-        <div>
-            <nav>
-                <a href=".contact">Contact Me</a>
-            </nav>
-        </div>
-    </section>
     <!--I had an idea to create a nav feature through css that when you run through each subject with the cursor, you see a description of what they're about-->
-    <section class="academic-experience">
+    <section id="academic-experience">
         <h2>Academic Experience</h2>
         <div>
             <h4>Application Programming</h4>
@@ -87,7 +60,7 @@
             <h4>Complex Problem Solving</h4>
         </div>
     </section>
-    <section class="work-experience">
+    <section id="work-experience">
         <h2>Work Experience</h2>
             <img src="images/ge-vernova-logo.png" alt="ge-vernova">
         
@@ -95,7 +68,7 @@
         
             <img src="images/piglets-logo-px-2.png" alt="piglets-pantry">
     </section>
-    <section class="skills">
+    <section id="skills">
         <h2>My Skills</h2>
         <!--technical and soft skills (actually, mention soft skills gained in the industrial and academic experience)-->
             <img src="images/python-logo.png">
@@ -108,16 +81,20 @@
         
             <img src="images/psql-logo.png">
     </section>
-    <section class="hobbies">
+    <section id="hobbies">
         <h2>Hobbies</h2>
     </section>
-    <section class="contact">
+    <section id="contact">
         <h2>Contact Me</h2>
-            <img src="images/linkedIn-logo.png" alt="linkedin">
-        
-            <img src="images/github-logo.png" alt="github">
-
-            <img src="images/gmail-logo.png" alt="gmail">
+            <a href="https://www.linkedin.com/in/hannah-ziwa/">
+                <img src="images/linkedIn-logo.png" alt="linkedin">
+            </a>
+            <a href="https://github.com/hannahziwa">
+                <img src="images/github-logo.png" alt="github">
+            </a>
+            <a href="mailto:ziwahannah@gmail.com">
+                <img src="images/gmail-logo.png" alt="gmail">
+            </a>
     </section>
 </body>
 
