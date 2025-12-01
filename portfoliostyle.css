@@ -37,6 +37,10 @@
     object-fit: cover;
 }
 
+#about p {
+    box-sizing: calc(50, 20);
+}
+
 .sections {
     float: right;
     position: relative;
@@ -90,8 +94,14 @@ h1 {
 }
 
 #academic-experience div{
-    margin: 10px;
-    padding: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+#academic-experience div:hover {
+    outline: none;
+    transition: transform 0.8s ease 0s, filter 0.3s ease;
+    transform: scale(1.1);
 }
 
 #work-experience {
@@ -100,7 +110,7 @@ h1 {
     flex-wrap: wrap; /* allow logos to wrap on small screens */
     justify-content: center; /* center logos horizontally */
     align-items: center; /* align logos vertically within the row */
-    gap: 24px; /* space between images */
+    gap: 50px; /* space between images */
     padding: 24px 0; /* vertical spacing above/below the row */
 }
 
@@ -114,10 +124,16 @@ h1 {
 }
 
 #work-experience img {
-    width: 220px; /* displayed box width for each logo */
+    width: 320px; /* displayed box width for each logo */
     height: 120px; /* displayed box height for each logo */
-    object-fit: contain; /* preserve aspect ratio, show whole logo */
+    object-fit:contain; /* preserve aspect ratio, show whole logo */
     display: block;
+}
+
+#work-experience img:hover {
+    outline: none;
+    transition: transform 0.8s ease 0s, filter 0.3s ease;
+    transform: scale(1.3);
 }
 
 #skills {
@@ -144,13 +160,19 @@ h1 {
     margin: 0 0 16px; /* small gap under the heading */
 }
 
+#skills img:hover {
+    outline: none;
+    transition: transform 0.6s ease 0s, filter 0.3s ease;
+    transform: scale(1.3);
+}
+
 #contact {
     width: 100%;
     display: flex;
     flex-wrap: wrap; /* allow logos to wrap on small screens */
     justify-content: center; /* center logos horizontally */
     align-items: center; /* align logos vertically within the row */
-    gap: 24px; /* space between images */
+    gap: 20px; /* space between images */
     padding: 24px 0; /* vertical spacing above/below the row */
 }
 
@@ -159,6 +181,7 @@ h1 {
     height: 50px; /* displayed box height for each logo */
     object-fit: contain; /* preserve aspect ratio, show whole logo */
     display: block;
+    cursor: pointer;
 }
 
 #contact > h2 {
@@ -168,6 +191,8 @@ h1 {
     margin: 0 0 16px; /* small gap under the heading */
 }
 
-#contact:hover {
-    
+#contact a:hover {
+    outline: none;
+    transition: transform 0.6s ease 0s, filter 0.3s ease;
+    transform: scale(1.2);
 }
