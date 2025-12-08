@@ -1,9 +1,45 @@
 * {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    background-color: cadetblue;
+    background-color:bisque;
     margin: 0px;
     padding: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* pushes logo to the left and links to the right */
+    align-items: center; 
+    background-color: olive;
+    color: black;
+    padding: 15px 30px;
+}
+
+.nav-links {
+    background-color: olive;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    background-color: olive;
+    color: black;
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+}
+
+.nav-links a:hover {
+    color: seashell;
+}
+
+.logo {
+    background-color: olive;
+    font-weight: 800;
+    font-size: 20px;
+    color:bisque;
 }
 
 .headshot {
@@ -41,37 +77,6 @@
     box-sizing: calc(50, 20);
 }
 
-.sections {
-    float: right;
-    position: relative;
-    right: 150px;
-    margin: 20px;
-    padding: 20px;
-    background-color: aliceblue;
-    overflow: auto;
-}
-
-.sections ul {
-    background-color: aliceblue;
-}
-
-.sections li {
-    display: inline-block;
-    background-color: aliceblue;
-    padding: 0px 20px;
-}
-
-.sections li a {
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-    color: #000;
-    background-color: aliceblue;
-}
-
-.sections li a:hover {
-    color: aqua;
-    background-color: aliceblue;
-}
 
 h1 {
     max-width: 300px;
