@@ -42,51 +42,52 @@
     color:bisque;
 }
 
-.headshot {
-    float:none;
-    position: relative;
-    width: 120px;
-    position: relative;
-    left: 450px;
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: olive;
+    color: seashell;
+    padding: 15px 30px;
+    margin: 100px;
+    border-radius: 20px;
 }
 
-.headshot img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+#about .headshot {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background-color: olive;
 }
 
-.headshot-2 {
-    float: left;
-    position: relative;
-    width: 120px;
-    position: relative;
-    left: 350px;
+#about .headshot img {
+    width: 270px;
+    flex: 0 0 160px;
+    background-color: olive;
+    border-radius: 20px;
 }
 
-/* Ensure any image inside the container scales to the container's size */
-.headshot-2 img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+#about .intro {
+    flex: 1; 
+    background-color: olive;
 }
 
-#about p {
-    box-sizing: calc(50, 20);
+#about .intro p {
+    box-sizing: calc(20, 20);
+    background-color: olive;
 }
 
 
-h1 {
+#about .intro h1 {
     max-width: 300px;
     margin: 40px auto; /* 50px vertical spacing, auto horizontally centers */
     padding: 10px;
     box-sizing: border-box; /* include padding inside the max-width */
     text-align: center;
+    background-color: olive;
 }
 
-#academic-experience, #industrial-experience, #skills, #hobbies, #links {
+#academic-experience, #work-experience, #skills, #hobbies, #contact {
     /* Keep page sections centered and aligned with a maximum width
        so all section content lines up horizontally. Using auto left/right
        margins centers the block; smaller vertical margins give consistent
@@ -96,6 +97,12 @@ h1 {
     padding: 50px;
     box-sizing: border-box; /* include padding inside the max-width */
     text-align: center;
+}
+
+#academic-experience h2, #work-experience h2, #skills h2, #hobbies h2, #contact h2 {
+    background-color: olive;
+    border-radius: 20px;
+    border-width: 200px;
 }
 
 #academic-experience div{
@@ -134,6 +141,7 @@ h1 {
     object-fit:contain; /* preserve aspect ratio, show whole logo */
     display: block;
 }
+
 
 #work-experience img:hover {
     outline: none;
