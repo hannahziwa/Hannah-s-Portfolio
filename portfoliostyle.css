@@ -1,7 +1,7 @@
 * {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    background-color:bisque;
+    background-color:beige;
     margin: 0px;
     padding: 0px;
 }
@@ -32,14 +32,14 @@
 }
 
 .nav-links a:hover {
-    color: seashell;
+    color: beige;
 }
 
 .logo {
     background-color: olive;
     font-weight: 800;
     font-size: 20px;
-    color:bisque;
+    color:beige;
 }
 
 #about {
@@ -47,7 +47,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: olive;
-    color: seashell;
+    color: beige;
     padding: 15px 30px;
     margin: 100px;
     border-radius: 20px;
@@ -89,9 +89,9 @@
 
 #academic-experience, #work-experience, #skills, #hobbies, #contact {
     /* Keep page sections centered and aligned with a maximum width
-       so all section content lines up horizontally. Using auto left/right
-       margins centers the block; smaller vertical margins give consistent
-       spacing without pushing content off-screen. */
+    so all section content lines up horizontally. Using auto left/right
+    margins centers the block; smaller vertical margins give consistent
+    spacing without pushing content off-screen. */
     max-width: 1000px;
     margin: 250px auto; /* 50px vertical spacing, auto horizontally centers */
     padding: 50px;
@@ -101,16 +101,34 @@
 
 #academic-experience h2, #work-experience h2, #skills h2, #hobbies h2, #contact h2 {
     background-color: olive;
+    color: beige;
     border-radius: 20px;
     border-width: 200px;
 }
 
-#academic-experience div{
-    margin: 20px;
-    padding: 20px;
+.ae-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling:touch;
+    white-space: nowrap;
+    padding-bottom: 8px;
 }
 
-#academic-experience div:hover {
+.ae-container .card {
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    width: 220px;
+    margin-right: 16px;
+    box-sizing: border-box;
+}
+
+.ae-container > h2 {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.ae-container .card:hover {
     outline: none;
     transition: transform 0.8s ease 0s, filter 0.3s ease;
     transform: scale(1.1);
