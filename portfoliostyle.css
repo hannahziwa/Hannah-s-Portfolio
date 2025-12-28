@@ -88,10 +88,6 @@
 }
 
 #academic-experience, #work-experience, #skills, #hobbies, #contact {
-    /* Keep page sections centered and aligned with a maximum width
-    so all section content lines up horizontally. Using auto left/right
-    margins centers the block; smaller vertical margins give consistent
-    spacing without pushing content off-screen. */
     max-width: 1000px;
     margin: 250px auto; /* 50px vertical spacing, auto horizontally centers */
     padding: 50px;
@@ -169,51 +165,16 @@
     transform: scale(1.1);
 }
 
-#work-experience {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap; /* allow logos to wrap on small screens */
-    justify-content: center; /* center logos horizontally */
-    align-items: center; /* align logos vertically within the row */
-    gap: 50px; /* space between images */
-    padding: 24px 0; /* vertical spacing above/below the row */
-}
-
-/* Ensure the section heading sits on its own row and is not treated
-   as a normal inline flex item — keep it full width and centered. */
-#work-experience > h2 {
-    flex: 0 0 100%; /* take full row, don't grow or shrink */
-    width: 100%;
-    text-align: center;
-    margin: 0 0 16px; /* small gap under the heading */
-}
-
-#work-experience img {
-    width: 320px; /* displayed box width for each logo */
-    height: 120px; /* displayed box height for each logo */
-    object-fit:contain; /* preserve aspect ratio, show whole logo */
-    display: block;
-}
-
-
-#work-experience img:hover {
-    outline: none;
-    transition: transform 0.8s ease 0s, filter 0.3s ease;
-    transform: scale(1.3);
-}
-
-.ae-container {
-    overflow-x: auto;
-    -webkit-overflow-scrolling:touch;
-    white-space: nowrap;
+.we-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 32px; 
     padding-bottom: 8px;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
-.ae-container::-webkit-scrollbar {
-    display:none;
-}
-.card {
+.card-we {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -223,33 +184,50 @@
     cursor: pointer;
     flex-direction: column;
     display: flex;
-    padding: 8px;
+    padding: 5px;
     margin-bottom: 30px;
+    gap: 24px; 
 }
 
-.ae-container .card {
+.we-container .card-we {
     display: inline-block;
     vertical-align: top;
     white-space: normal;
-    width: 220px;
+    width: 300px;
     margin: 16px;
     background-color: white;
 }
 
-#academic-experience > h2 {
+#work-experience > h2 {
     display: block;
     width: 100%;
     margin-bottom: 30px;
 }
 
+.card-we img {
+    width: 230px; /* displayed box width for each logo */
+    height: 120px; /* displayed box height for each logo */
+    object-fit:contain; /* preserve aspect ratio, show whole logo */
+    display: block;
+    background-color: white;
+    margin: auto;
+}
+
+
+.we-container .card-we:hover {
+    outline: none;
+    transition: transform 0.8s ease 0s, filter 0.3s ease;
+    transform: scale(1.1);
+}
+
 #skills {
     width: 100%;
     display: flex;
-    flex-wrap: wrap; /* allow logos to wrap on small screens */
-    justify-content: center; /* center logos horizontally */
-    align-items: center; /* align logos vertically within the row */
-    gap: 24px; /* space between images */
-    padding: 24px 0; /* vertical spacing above/below the row */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 24px; 
+    padding: 24px 0; 
 }
 
 #skills img{
@@ -275,26 +253,26 @@
 #contact {
     width: 100%;
     display: flex;
-    flex-wrap: wrap; /* allow logos to wrap on small screens */
-    justify-content: center; /* center logos horizontally */
-    align-items: center; /* align logos vertically within the row */
-    gap: 20px; /* space between images */
-    padding: 24px 0; /* vertical spacing above/below the row */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px;
+    padding: 24px 0; 
 }
 
 #contact img{
-    width: 120px; /* displayed box width for each logo */
-    height: 50px; /* displayed box height for each logo */
-    object-fit: contain; /* preserve aspect ratio, show whole logo */
+    width: 120px;
+    height: 50px;
+    object-fit: contain; 
     display: block;
     cursor: pointer;
 }
 
 #contact > h2 {
-    flex: 0 0 100%; /* take full row, don't grow or shrink */
+    flex: 0 0 100%; 
     width: 100%;
     text-align: center;
-    margin: 0 0 16px; /* small gap under the heading */
+    margin: 0 0 16px; 
 }
 
 #contact a:hover {
