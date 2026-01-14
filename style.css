@@ -1,4 +1,48 @@
 
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: olive;
+    color: beige;
+    padding: 15px 30px;
+    margin: 100px;
+    border-radius: 20px;
+}
+
+#about .headshot {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background-color: olive;
+}
+
+#about .headshot img {
+    width: 270px;
+    flex: 0 0 160px;
+    background-color: olive;
+    border-radius: 20px;
+}
+
+#about .intro {
+    flex: 1; 
+    background-color: olive;
+}
+
+#about .intro p {
+    box-sizing: calc(20, 20);
+    background-color: olive;
+}
+
+
+#about .intro h1 {
+    max-width: 300px;
+    margin: 40px auto; /* 50px vertical spacing, auto horizontally centers */
+    padding: 10px;
+    box-sizing: border-box; /* include padding inside the max-width */
+    text-align: center;
+    background-color: olive;
+}
 
 #academic-experience, #work-experience, #skills, #hobbies, #contact {
     max-width: 1000px;
