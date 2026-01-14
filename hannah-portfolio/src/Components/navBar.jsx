@@ -6,8 +6,7 @@ const navBar = () => {
 
     const navList = [
         { text: "About", path: "/about" },
-        { text: "Academic Experience", path: "/academic-experience" },
-        { text: "Work Experience", path: "/work-experience" },
+        { text: "Experiences", path: "/experience" },
         { text: "Skills", path: "/skills" },
         { text: "Hobbies", path: "/hobbies" },
         { text: "Contact", path: "/contact" }
